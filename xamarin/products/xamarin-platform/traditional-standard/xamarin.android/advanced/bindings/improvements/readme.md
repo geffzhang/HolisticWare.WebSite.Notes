@@ -2,23 +2,66 @@
 
 readme.md
 
-maven artifact 
+*   https://github.com/xamarin/xamarin-android/issues/5352
 
-    *   2 use cases:
+*   Classic Item Groups? #40
 
-        *   old/existing
+    *   https://github.com/xamarin/Xamarin.Legacy.Sdk/issues/40
 
-            *   known urls
 
-            *   known nuget id
+*   https://github.com/HolisticWare-Xamarin-Tools/HolisticWare.Xamarin.Tools.Bindings.XamarinAndroid.FassBinderMeister
 
-            *   possibly unknown nuget version
+*   https://github.com/jpobst/Prototype.Android.MavenBindings
 
-        *   new binding
+## TODO
 
-            *   unknown urls
+### Urgent
 
-            *   unknown nuget metadata
+*   update 
+
+    *   list (config.json) update
+
+        *   bindings
+
+            *   `"dependencyOnly": false`
+
+            *   Maven discovery
+
+        *   dependenies 
+
+            *   `"dependencyOnly": true`
+
+            *   NuGet discovery
+
+*   nuget download count data
+
+    *   `nuget_id.versioned.csv` per 
+
+        *   date
+
+        *   nuget/artifact version
+
+
+## Bindings improvements
+
+*   2 use cases:
+
+    *   old/existing - update
+
+        *   known 
+        
+        urls
+
+        *   nuget id
+
+        *   possibly unknown nuget version
+
+    *   new binding
+
+        *   unknown urls
+
+        *   unknown nuget metadata
+
 
 *   problem 
 
@@ -68,3 +111,6 @@ Artifact(s)
     
 ## nuget
 
+*   metadata
+
+    *   https://github.com/NuGet/Home/pull/12174

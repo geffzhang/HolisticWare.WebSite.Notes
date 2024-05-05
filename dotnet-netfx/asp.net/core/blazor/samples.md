@@ -1,5 +1,9 @@
 # Samples
 
+*   https://github.com/dotnet/blazor-samples
+    
+*   https://github.com/dotnet/AspNetCore.Docs/tree/main/aspnetcore/blazor
+
 *   http://blazorgames.net/
 
     *   https://github.com/exceptionnotfound
@@ -96,3 +100,4 @@
 
 *   https://github.com/panesofglass/trail
 
+*   https://github.com/harveytriana/BlazorGamePractice

@@ -22,11 +22,43 @@ maui-check
 dotnet new maui -n HelloMaui
 ```
 
+https://devblogs.microsoft.com/xamarin/the-future-of-xamarin-community-toolkit/
+
+
 ## Links / References
 
 *   https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui/
 
-*   https://devblogs.microsoft.com/dotnet/announcing-net-multi-platform-app-ui-preview-3/
+*   announcements
+
+    *   https://devblogs.microsoft.com/dotnet/dotnet-maui-rc-1/
+
+    *   https://devblogs.microsoft.com/dotnet/dotnet-maui-preview-14/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-13/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-12/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-dotnet-maui-preview-11/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-10/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-9/
+
+    *   https://devblogs.microsoft.com/dotnet/update-on-dotnet-maui/
+
+    *   https://devblogs.microsoft.com/dotnet/introducing-the-net-maui-community-toolkit-preview/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-7/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-6/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-5/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-net-maui-preview-4/
+
+    *   https://devblogs.microsoft.com/dotnet/announcing-net-multi-platform-app-ui-preview-3/
+
 
 *   https://visualstudiomagazine.com/articles/2021/01/05/maui.aspx
 
@@ -140,7 +172,6 @@ dotnet new maui -n HelloMaui
 
 
 
-<<<<<<< Updated upstream
 *   https://medium.com/successivetech/say-hello-to-net-maui-a-first-class-ui-framework-ed6b120d7612
 
 *   https://www.infoworld.com/article/3544632/microsoft-unveils-net-maui-for-cross-platform-apps.html
@@ -149,5 +180,34 @@ dotnet new maui -n HelloMaui
 
 *   https://www.telerik.com/blogs/sands-of-maui-issue-9
 
-=======
->>>>>>> Stashed changes
+
+## Installation
+
+```
+dotnet sdk check
+
+dotnet workload list
+
+dotnet workload uninstall   maui
+dotnet workload install     maui
+
+dotnet tool uninstall   -g  redth.net.maui.check
+dotnet tool install     -g  redth.net.maui.check
+
+dotnet new --uninstall  Microsoft.Maui.Templates
+dotnet new --install    Microsoft.Maui.Templates
+```
+
+```
+dotnet new nugetconfig
+
+dotnet nuget add source -n maui-preview https://aka.ms/maui-preview/index.json
+```
+
+```
+ maui-check  --fix --non-interactive
+```
+
+```
+dotnet new maui -n      HelloPreview6
+```

@@ -4,13 +4,33 @@ msbuild-intro.md
 
 ## References / Links
 
+*   https://www.jon-douglas.com/2017/07/26/msbuild-basics/
+
 *   https://msdn.microsoft.com/en-us/library/ms164309.aspx
 
 *   https://github.com/Microsoft/msbuild/blob/master/documentation/wiki/MSBuild-Resources.md
 
+*   Cheat-Sheet
+
+    *   https://gist.github.com/dotMorten/7db5cc3ae4ab72db784df0793b45d6ac
+    
 *   Tips n Tricks
 
     *   https://github.com/Microsoft/msbuild/blob/master/documentation/wiki/MSBuild-Tips-&-Tricks.md
+
+## Project SDKs
+
+*   https://learn.microsoft.com/en-us/visualstudio/msbuild/how-to-use-project-sdk
+
+## Items
+
+*   https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-items
+
+## Targets
+
+*   https://learn.microsoft.com/en-us/visualstudio/msbuild/msbuild-dot-targets-files
+
+
 
 ## Tools
 

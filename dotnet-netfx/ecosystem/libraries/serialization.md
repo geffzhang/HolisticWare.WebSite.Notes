@@ -9,6 +9,8 @@ serialization.md
 
 *   https://docs.microsoft.com/en-us/dotnet/standard/serialization/
 
+*   https://learn.microsoft.com/en-us/dotnet/standard/serialization/
+
     *   binary
     
         *   https://docs.microsoft.com/en-us/dotnet/standard/serialization/binary-serialization
@@ -28,12 +30,43 @@ serialization.md
             *   .NET Standard 2.0 and later versions
 
         *   https://docs.microsoft.com/en-us/dotnet/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to?pivots=dotnet-5-0
+
 ## Binary
+
+*   `System.Runtime.Serialization.Formatters.Binary.BinaryFormatter`
+
+    *   https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter
+
+    *   https://learn.microsoft.com/en-us/dotnet/core/compatibility/serialization/5.0/binaryformatter-serialization-obsolete
+
+    *   https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.formatters.binary.binaryformatter?view=net-5.0https://learn.microsoft.com/en-us/dotnet/standard/serialization/binaryformatter-security-guide
 
 *   Avro (Apache)
 
     [./serialization/apache-avro.md](./serialization/apache-avro.md)
     
+*   MemoryPack
+
+    *   https://github.com/Cysharp/MemoryPack
+
+    *   Zero encoding extreme performance binary serializer for C# and Unity.
+
+    *   System.Text.Json
+
+    *   protobuf-net
+    
+    *   MessagePack for C#
+
+    *   Orleans.Serialization
+
+    MemoryPack is my 4th serializer, previously I've created well known serializers, 
+    
+        ZeroFormatter, 
+        Utf8Json, 
+        MessagePack for C#. 
+        
+    The reason for MemoryPack's speed is due to its C#-specific, C#-optimized binary format and a well tuned implementation based on my past experience. It is also a completely new design utilizing .NET 7 and C# 11 and the Incremental Source Generator (.NET Standard 2.1 (.NET 5, 6) and there is also Unity support).
+
 *   Bond (Microsoft)
 
     [./serialization/microsoft-bond.md](./serialization/microsoft-bond.md) 
@@ -82,8 +115,31 @@ serialization.md
 
     *   https://github.com/generatives/WirePCL
     
+
 ## JSON
 
+*   Newtonsoft.Json
+
+*   System.Text.Json
+
+*   SpanJson
+
+    *   https://github.com/Tornhoof/SpanJson
+
+    *   https://github.com/Tornhoof/SpanJson/wiki/Performance
+
+    *   https://www.youtube.com/watch?v=XMoNYQPi2k8&ab_channel=CodeWithStu
+
+    *   https://github.com/Im5tu/SerializationBenchmarks
+
+### Performance
+
+    *   https://michaelscodingspot.com/the-battle-of-c-to-json-serializers-in-net-core-3/
+
+    http://aumcode.github.io/serbench/
+    https://github.com/aumcode/serbench
+    http://julian.farm/geekswithblogs/?url=/LeonidGaneline/archive/2015/05/06/serializers-in-.net.-v.2.aspx
+    
 ## Diverse
 
 *   ZeroFormatter
@@ -216,4 +272,10 @@ ServiceStack.Text
 
 FsPickler.Json
 
+
+## EDN extensible data notation 
+
+*   https://github.com/edn-format/edn
+
+*   https://github.com/edn-format/edn-dot-net
 

@@ -99,4 +99,93 @@ csharp.md
 
 *   http://resourcerefactoring.codeplex.com/
 
+## Versions
 
+*   https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+
+*   versions:
+
+    *   1.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-10
+
+    *   1.1 and 1.2
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-12
+
+    *   2.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-20
+
+    *   3.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-30
+
+    *   4.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-40
+
+    *   5.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-50
+
+    *   6.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-60
+
+    *   7.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-70
+
+    *   7.1
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-71
+
+    *   7.2
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-72
+
+    *   7.3
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-version-history#c-version-73
+
+    *   8.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8
+
+    *   9.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-9
+
+    *   10.0
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-10
+
+    *   11
+
+        *   https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-11
+
+## v.10
+
+*   https://twitter.com/DanJSiegel/status/1448716839123488768
+
+*   https://sharplab.io/#gist:a20498078ba7f6376fd9413a15ba9ff9
+
+*   https://www.tabsoverspaces.com/233844-back-to-csharp-basics-difference-between-and-get-for-properties
+
+```csharp
+public class C 
+{
+    // defines the method body on the property getter
+    // Option one is equivalent to 
+    //  Foo { get { return Guid.NewGuid(); } } 
+    // so new Guid every time. 
+     public Guid Foo0 => Guid.NewGuid();
+
+    // assigns the value to the property when the object is instantiated
+    // Option two creates a default initializer that sets the auto backing field 
+    // to Guid.NewGuid(); 
+    // so same Guid every time.
+     public Guid Foo1 { get; } = Guid.NewGuid(); 
+}
+```

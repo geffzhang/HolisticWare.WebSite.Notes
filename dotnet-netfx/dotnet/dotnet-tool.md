@@ -45,6 +45,10 @@ adding and such to fully adopt netstandard so at least we can run the cake globa
 maybe see how dotnet tools can be invoked from cake
 This might provide a nice transition
 
+## Releaser
+
+https://github.com/xoofx/dotnet-releaser
+
 ## Cake
 
 ```
@@ -112,4 +116,16 @@ do
     dotnet tool install --global $TOOL
 done
 
+```
+
+## Content files
+
+*   https://github.com/dotnet/sdk/issues/9730
+
+*   https://github.com/dotnet/sdk/issues/8677
+
+*   https://blog.ladeak.net/posts/grpc-proxy2
+
+```
+.dotnet/tools/.store/xunit-cli/0.1.16/xunit-cli/0.1.16/tools/net6.0/any 
 ```

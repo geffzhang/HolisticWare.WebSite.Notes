@@ -2,6 +2,18 @@
 
 csharp-performance.md
 
+## Videos
+
+*   How IEnumerable can kill your performance in C#
+
+    *   https://www.youtube.com/watch?v=cLsmW7a8MkU&ab_channel=NickChapsas
+
+    *   beware of `IEnumerable` and `yield return`!!1
+
+        *   multiple enumeration
+
+    *   https://www.bytehide.com/blog/performance-optimization-tips-csharp
+    
 ## Books
 
 *   Writing ing High-Performance .NET Applications
@@ -57,9 +69,18 @@ csharp-performance.md
 
     *   https://github.com/thangchung/awesome-dotnet-core
 
+## .NET Core 3
+
+*   https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-3-0/
+
 
 ## Comparisons
 
 *   https://www.itu.dk/~sestoft/papers/numericperformance.pdf
 
 *   https://github.com/moljac/Samples.CSharp/tree/master/performance
+
+
+## Samples
+
+*   https://www.codeproject.com/Articles/5269747/Using-Span-T-to-Improve-Performance-of-Csharp-Code

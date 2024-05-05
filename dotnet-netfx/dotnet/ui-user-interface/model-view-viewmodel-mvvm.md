@@ -2,8 +2,12 @@
 
 model-view-viewmodel-mvvm.md
 
+## Tutorials
 
-MVU
+*   https://learn.microsoft.com/en-us/dotnet/maui/tutorials/notes-mvvm/
+
+
+## MVU
 
 *   https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui/
 
@@ -69,4 +73,11 @@ https://github.com/thomasclaudiushuber/mvvmgen-samples
 
 *   https://www.youtube.com/watch?v=YmX79NHr24E&ab_channel=CodeTayo
 
+
+
+*   MVVM Overview | ReactiveUI in Xamarin.Forms | AK Academy
+
+    *   https://www.youtube.com/watch?v=exwKNsIsDAI
+
+*   https://blog.bijington.com/c%23/xamarin/xamarin.forms/mvvm/2021/11/10/building-a-mobile-game-in-xamarin-forms-part-four.html
 
